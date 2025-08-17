@@ -1,136 +1,173 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DreamHome - Real Estate</title>
+  <title>SalihuHome - Real Estate</title>
   <link rel="stylesheet" href="index.css" />
 </head>
-<body>
+<body style="background:url('./SGRL-3.jpg')">
+  <!-- HEADER -->
   <header>
-    <div class="container"><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DreamHome - Real Estate</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>DreamHome</h1>
-      <nav>
+    <div class="container header-container">
+      <h1>SalihuHome</h1>
+
+      <!-- Hamburger Menu Icon -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+       
+      <nav id="nav-menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Listings</a></li>
-          <li><a href="#">Agents</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#agents">Agents</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-  </header>
 
-  <section class="hero">
+  </header>
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
     <div class="hero-text">
       <h2>Your Dream Home Awaits</h2>
       <p>Find your perfect property today</p>
-      <a href="#" class="btn">Browse Listings</a>
-    </div>
+
+      <!-- SEARCH BAR -->
+      <form class="search-bar">
+        <input type="text" placeholder="Location" />
+        <select>
+          <option value="">Property Type</option>
+          <option value="house">House</option>
+          <option value="apartment">Apartment</option>
+          <option value="duplex">Duplex</option>
+        </select>
+        <select>
+          <option value="">Price Range</option>
+          <option value="0-10000000">₦0 - ₦10M</option>
+          <option value="10000000-30000000">₦10M - ₦30M</option>
+          <option value="30000000-100000000">₦30M+</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </div>   
   </section>
 
-  <section class="properties">
+  <!-- LISTINGS -->
+  <section id="listings" class="properties">
     <div class="container">
       <h2>Featured Properties</h2>
+      <div class="filter-bar">
+        <label>Sort by:
+          <select>
+            <option value="latest">Latest</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </label>
+      </div>
       <div class="property-grid">
         <div class="property-card">
-          <img src="https://via.placeholder.com/300x200" alt="House 1">
+          <img src="SGRL-3.jpg" alt="House 1">
           <h3>3 Bed Family House</h3>
-          <p>₦25,000,000 – Lagos</p>
+          <p class="price">₦25,000,000 – Lagos</p>
+          <a href="https://wa.link/f64bja" class="btn-link">Chat with us</a>
         </div>
         <div class="property-card">
-          <img src="https://via.placeholder.com/300x200" alt="House 2">
+          <img src="image 2.webp" alt="House 2">
           <h3>Modern Duplex</h3>
-          <p>₦45,000,000 – Abuja</p>
+          <p class="price">₦45,000,000 – Abuja</p>
+          <a href="https://wa.link/f64bja" class="btn-link">Chat with us</a>
         </div>
         <div class="property-card">
-          <img src="https://via.placeholder.com/300x200" alt="House 3">
+          <img src="2ee3f53266ddf2e5c3c57dd24f339f67.jpg" alt="House 3">
           <h3>Luxury Apartment</h3>
-          <p>₦60,000,000 – Lekki</p>
+          <p class="price">₦60,000,000 – Lekki</p>
+          <a href="https://wa.link/f64bja" class="btn-link">Chat with us</a>
+        </div>
+        <div class="property-card">
+          <img src="OIP.webp" alt="House 2">
+          <h3>Modern Duplex</h3>
+          <p class="price">₦45,000, – Abuja</p>
+          <a href="https://wa.link/f64bja" class="btn-link">Chat with us</a>
+        </div>
+         <div class="property-card">
+          <img src="6fd0834ee2c5324de28566186cab74e6.jpg" alt="House 2">
+          <h3>Modern Duplex</h3>
+          <p class="price">₦45,000,000 – Abuja</p>
+          <a href="https://wa.link/f64bja" class="btn-link">Chat with us</a>
+        </div>
+        <div class="property-card">
+          <img src="OIP (2).webp" alt="House 2">
+          <h3>Modern Duplex</h3>
+          <p class="price">₦45,000,000 – Abuja</p>
+          <a href="https://wa.link/f64bja" class="btn-link">Chat with us</a>
+        </div>
+         <div class="property-card">
+          <img src="OIP (1).webp" alt="House 2">
+          <h3>Modern Duplex</h3>
+          <p class="price">₦45,000,000 – Abuja</p>
+          <a href="https://wa.link/f64bja" class="btn-link">Chat with us</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about">
+  <!-- AGENTS -->
+  <section id="agents" class="about">
     <div class="container">
-      <h2>Why Choose DreamHome?</h2>
-      <p>We offer trusted real estate services, connecting you with the best properties and reliable agents.</p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 DreamHome Real Estate. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
-
-      <h1>DreamHome</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Listings</a></li>
-          <li><a href="#">Agents</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Your Dream Home Awaits</h2>
-      <p>Find your perfect property today</p>
-      <a href="#" class="btn">Browse Listings</a>
-    </div>
-  </section>
-
-  <section class="properties">
-    <div class="container">
-      <h2>Featured Properties</h2>
+      <h2>Meet Our Agents</h2>
+      <p>Our trusted team of professionals is here to help you every step of the way.</p>
       <div class="property-grid">
         <div class="property-card">
-          <img src="https://via.placeholder.com/300x200" alt="House 1">
-          <h3>3 Bed Family House</h3>
-          <p>₦25,000,000 – Lagos</p>
+          <h3>nuhu aliyu</h3>
+          <p> contact: +234 7088784999</p>
+          <p>Expert in Affordable Housing</p>
         </div>
         <div class="property-card">
-          <img src="https://via.placeholder.com/300x200" alt="House 2">
-          <h3>Modern Duplex</h3>
-          <p>₦45,000,000 – Abuja</p>
-        </div>
-        <div class="property-card">
-          <img src="https://via.placeholder.com/300x200" alt="House 3">
-          <h3>Luxury Apartment</h3>
-          <p>₦60,000,000 – Lekki</p>
+          <h3>salihu sani</h3>
+          <p>contact: +234 7088784999</p>
+          <p>Commercial Property Advisor</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about">
+  <!-- CONTACT -->
+  <section id="contact" class="about">
     <div class="container">
-      <h2>Why Choose DreamHome?</h2>
-      <p>We offer trusted real estate services, connecting you with the best properties and reliable agents.</p>
+      <h2>Contact Us</h2>
+      <p>Email: salihusanimusa@gmail.com | Phone: +234 7088784999</p>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 DreamHome Real Estate. All rights reserved.</p>
+      <p>&copy; 2025 SalihuHome Real Estate. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
